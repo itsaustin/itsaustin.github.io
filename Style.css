@@ -1,0 +1,47 @@
+
+
+#container {
+	display:flex!important;
+		justify-content: space-around;
+}
+#container div{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.firstdiv {
+	flex:6;
+}
+.seconddiv {
+	flex:3;
+}
+.thirddiv {
+	flex:3;
+}
+
+body {
+	background-color:#121212;
+	font-family:georgia;
+	color:white;
+ 	text-align: center;
+}
+.centerlist {
+	width:15%;
+	margin: 0 auto;
+	text-align: center;
+}
+ul {
+	list-style-type:square;
+}
+
+h1, h2, h3 {
+	text-shadow: 2px 2px #006eff;
+}
+
+.key {
+	text-decoration: underline;
+	font-weight: 900;
+}
+@media only screen and (max-width: 800px) {
+	body {
+		text-transform: uppercase;
+	}}
