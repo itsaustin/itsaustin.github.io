@@ -1,0 +1,45 @@
+.container {
+    width: 50%;
+    margin:auto;
+    text-align: center
+}
+.title {
+    margin-top: 25%;
+}
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input[type="radio"] {
+    display: none; 
+}
+label {
+    cursor: pointer;
+            font-size: 30px;
+            position: relative;
+            text-align: center;
+            padding: 0 20px 0 20px;
+            border: 1px gray dotted;
+            border-radius: 25px;
+            margin: 0 10px 0 10px
+}
+input[type="radio"]:checked + label {
+    border: 2px black solid;
+    border-radius: 25px;
+    font-weight: bold;
+}
+#play {
+    width: 200px;
+    background-color: blue;
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px 20px 8px 20px;
+}
+#result {
+    transition: transform linear;
+}
