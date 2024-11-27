@@ -1,0 +1,86 @@
+button {
+    font-size: 38px;
+    padding: 15px;
+    margin:0px 10px 0px 10px;
+}
+
+#name{
+    text-align: center;
+    font-size: 58px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#quickadd {
+    background-color: rgb(213, 214, 216);
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding: 15px 10px 20px 40px;
+    margin-bottom: 20px;
+}
+
+#quickadd button {
+    padding-top: 40px!important;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    width: 120px;
+}
+#quickadd button:hover {
+    transform: scale(1.2);
+}
+
+#propmtadd {
+    text-align: center;
+}
+.fabutton {
+    background-color: transparent;
+    border: 0px;
+}
+#list li{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+    margin: auto;
+    margin-top:10px;
+    list-style-type: none;
+    box-shadow: 0 0 5px 5px #bbbbbb;
+    font-size: 16px;
+}
+
+#listarea, #noitems {
+    text-align: center;
+}
+#buttons {
+    text-align: center;
+}
+ul {
+    padding-left: 0px;
+}
+
+.tooltip {
+    position: fixed;
+    width: 200px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+    position: relative; /* Ensure the tooltip is the reference point for the arrow */
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position below the tooltip */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    border-width: 10px; /* Size of the arrow */
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Triangle pointing up */
+}

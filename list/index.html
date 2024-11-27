@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Grocery App.io</title>
+    </head>
+    <body>
+        <h1 id="name">Grocery App.io</h1>
+        <div id="quickadd">
+            <h2>Quick Add</h2>
+            <button onclick="quickAdd('Apple', this)">
+                <i class="fa-solid fa-apple-whole fa-2xl"></i>
+            </button>
+            <button onclick="quickAdd('Bread', this)">
+                <i class="fa-solid fa-bread-slice fa-2xl"></i>
+            </button>
+            <button onclick="quickAdd('Egg', this)">
+                <i class="fa-solid fa-egg fa-2xl"></i>
+            </button>
+            <button onclick="quickAdd('Coffee', this)">
+                <i class="fa-solid fa-mug-hot fa-2xl"></i>
+            </button>
+            <button onclick="quickAdd('Fish', this)">
+                <i class="fa-solid fa-fish fa-2xl"></i>
+            </button>
+            <button onclick="quickAdd('Wine', this)">
+                <i class="fa-solid fa-wine-bottle fa-2xl"></i>
+            </button>
+        </div>
+        <div id="propmtadd">
+            <div id="tooltip" class="tooltip">Click the plus symbol to add custom items.</div>
+            <button class="fabutton" onclick="addToList()">
+                <i id="plusicon" class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+        <div id="noitems">
+            <h1>There are no items on your list, try adding some above.</h1>
+        </div>
+        <div id="listarea" style="display: none;">
+            <h1>Your list is:</h1>    
+            <ul id="list">
+                
+            </ul>
+            <button class="fabutton" onclick="removeItem()">
+                <i id="minusicon" class="fa-solid fa-minus fa-2xl"></i>
+            </button>
+            <button class="fabutton" onclick="removeAll()">
+                <i id="trashicon" class="fa-solid fa-trash-can fa-2xl"></i>
+            </button>
+        </div>
+        <div id="buttons">
+            
+
+        </div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/a4da5247f6.js" crossorigin="anonymous"></script>
+    </body>
+</html>
